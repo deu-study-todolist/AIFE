@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainPage from "../pages/main/MainPage";
+import Support from "../pages/support/Support";
 
 export const router = createBrowserRouter([
   {
@@ -8,7 +9,7 @@ export const router = createBrowserRouter([
     errorElement: "",
   },
   {
-    path: "",
-    element: "",
+    path: "/support",
+    element: <Support />,
   },
 ]);
