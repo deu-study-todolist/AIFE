@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Layout from "../../layout/Layout";
 import { postData } from "../../api/Product";
 
-export default function Product() {
+export default function ProductPage() {
   const [text, setText] = useState("");
   const [data, setData] = useState();
 
@@ -127,7 +127,7 @@ export default function Product() {
                   </button>
                 </div>
                 <button
-                  className="relative top-0.5 w-[30%] h-full  rounded-br-3xl bg-black text-white text-3xl"
+                  className="relative top-0.5 w-[30%] h-full  rounded-br-3xl bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-3xl"
                   onClick={handleTranslate}
                 >
                   번역하기
