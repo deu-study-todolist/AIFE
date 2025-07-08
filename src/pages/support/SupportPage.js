@@ -5,7 +5,7 @@ export default function SupportPage() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-around w-full">
-        <div className="w-[1300px] h-[800px] flex flex-col justify-between items-center gap-10">
+        <div className="w-[1300px] h-[600px] flex flex-col justify-between items-center gap-10">
           <div className="flex flex-col gap-10 items-center">
             <span className="text-8xl">Support center</span>
             <span className="text-5xl">무엇을 도와드릴까요?</span>

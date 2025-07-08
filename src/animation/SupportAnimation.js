@@ -16,7 +16,7 @@ const SupportAniation = () => {
     return () => anim.destroy();
   }, []);
 
-  return <div ref={container} style={{ width: 500, height: 500 }} />;
+  return <div ref={container} style={{ width: 400, height: 400 }} />;
 };
 
 export default SupportAniation;
