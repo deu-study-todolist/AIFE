@@ -16,11 +16,11 @@ export default function FeaturesPage() {
               <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-4xl" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
                 <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                  <p className="mt-2 text-3xl font-medium tracking-tight text-gray-950 max-lg:text-center">
+                  <p className="mt-2 text-2xl font-medium tracking-tight text-gray-950 max-lg:text-center">
                     우리 서비스는 대한민국 각 지역의 사투리를 자동으로 표준어로
                     바꿔주는 사투리 자동 번역기입니다.
                   </p>
-                  <p className="mt-2 max-w-lg text-3xl text-gray-600 max-lg:text-center">
+                  <p className="mt-2 max-w-lg text-2xl text-gray-600 max-lg:text-center">
                     단순한 단어 변환을 넘어서, 인공지능(GPT)을 활용하여 문맥까지
                     고려한 자연스러운 번역을 제공합니다.
                   </p>
@@ -30,7 +30,7 @@ export default function FeaturesPage() {
                     <img
                       alt="mainpng"
                       src="images/main.png"
-                      className="size-full object-cover object-top rounded-t-3xl"
+                      className="size-full object-top rounded-t-3xl"
                     />
                   </div>
                 </div>
@@ -73,10 +73,10 @@ export default function FeaturesPage() {
                   <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
                     ✅ 빠르고 정확한 대응
                   </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  <p className="mt-2 max-w-lg text-xl text-gray-600 max-lg:text-center">
                     대부분은 사전 기반으로 빠르게 처리하고,
                   </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  <p className="mt-2 max-w-lg text-xl text-gray-600 max-lg:text-center">
                     사전에 없는 표현은 GPT를 활용해 유연하게 대응합니다.
                   </p>
                 </div>
