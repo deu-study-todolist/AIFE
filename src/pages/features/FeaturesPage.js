@@ -69,7 +69,7 @@ export default function FeaturesPage() {
             <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
               <div className="absolute inset-px rounded-lg bg-white" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                <div className="px-8 pt-8 sm:px-10 sm:pt-10">
+                <div className="px-8 pt-8 sm:px-10 sm:pt-4">
                   <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
                     ✅ 빠르고 정확한 대응
                   </p>
@@ -83,8 +83,8 @@ export default function FeaturesPage() {
                 <div className="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
                   <img
                     alt=""
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png"
-                    className="h-[min(152px,40cqw)] object-cover"
+                    src="images/supportpage.png"
+                    className="w-full h-[min(152px,40cqw)] object-cover"
                   />
                 </div>
               </div>
@@ -94,12 +94,13 @@ export default function FeaturesPage() {
               <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-4xl lg:rounded-r-4xl" />
               <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
                 <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                    Powerful APIs
+                  <p className="mt-2 text-2xl font-medium tracking-tight text-gray-950 max-lg:text-center">
+                    강력한 인공지능을 통해
                   </p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                    Sit quis amet rutrum tellus ullamcorper ultricies libero
-                    dolor eget sem sodales gravida.
+                  <p className="mt-2 text-xl text-gray-600 max-lg:text-center">
+                    특정 지역의 사투리는 이해하기 힘들고, 이에 따라 소통에도
+                    어려움을 겪음. 따라서 사투리를 번역하는 걸 만들어 이에 대한
+                    불편함을 해소하고자 함
                   </p>
                 </div>
                 <div className="relative min-h-120 w-full grow">
@@ -107,15 +108,30 @@ export default function FeaturesPage() {
                     <div className="flex bg-gray-900 outline outline-white/5">
                       <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
                         <div className="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white">
-                          NotificationSetting.jsx
+                          app.py
                         </div>
                         <div className="border-r border-gray-600/10 px-4 py-2">
-                          App.jsx
+                          App.py
                         </div>
                       </div>
                     </div>
-                    <div className="px-6 pt-6 pb-14">
-                      {/* Your code example */}
+                    <div className="text-xl px-6 pt-6 pb-14 text-white overflow">
+                      <pre className="text-sm font-mono whitespace-pre-wrap">
+                        {`def load_dialect_dictionary(csv_path):
+    mapping = {}
+    region_map = {}
+    with open(csv_path, encoding='cp949') as f:
+        reader = csv.reader(f)
+        next(reader)  # 헤더 스킵
+        for row in reader:
+            if len(row) >= 2:
+                dialect = row[0].strip()
+                standard = row[1].strip()
+                region = row[2].strip() if len(row) > 2 else ""
+                mapping[dialect] = standard
+                region_map[dialect] = region
+    return mapping, region_map`}
+                      </pre>
                     </div>
                   </div>
                 </div>
