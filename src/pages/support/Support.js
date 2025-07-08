@@ -1,18 +1,42 @@
-import Header from "../../components/Header";
+import Layout from "../../layout/Layout";
 
-export default function MainPage() {
+export default function Support() {
   return (
-    <div className="bg-white">
-      <Header />
-    </div>
+    <Layout>
+              <div className="flex flex-col items-center justify-around w-full">
+                <div className="flex flex-col items-center gap-10">
+                  <span className="text-8xl">Support center</span>
+                  <span className="text-5xl">무엇을 도와드릴까요?</span>
+                  <video
+              alt="logo"
+              src="/video/support.mp4"
+              className="w-auto h-[400px]"
+              autoPlay
+              loop
+              muted
+              playsInline
+              >
+            </video>
+                </div>
+                 <div className="mt-12 text-center text-2xl md:text-3xl space-y-4 font-semibold">
+                  <span >P. 010-4005-2469</span>
+                  <span>E-mail. gnswldms2@gmail.com</span>
+                  
+
+                  <button>34</button>
+                </div>
+              </div>
+    </Layout>
+    
   );
 }
 
-<div className="relative isolate px-6 pt-14 lg:px-8">
+
+ <div className="relative isolate px-6 pt-14 lg:px-8">
   {/* 그라데이션 1*/}
   <div
     aria-hidden="true"
-    className="absolute inset-x-0 top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-40"
+    className="absolute inset-x-0 top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-100"
   >
     <div
       style={{
@@ -26,7 +50,7 @@ export default function MainPage() {
   {/* 그라데이션 2 */}
   <div
     aria-hidden="true"
-    className="absolute inset-x-0 top-[calc(100%-8rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+    className="absolute inset-x-0 top-[calc(100%+35rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%+25rem)]"
   >
     <div
       style={{

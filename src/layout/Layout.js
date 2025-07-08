@@ -1,13 +1,13 @@
-// src/layout/Layout.js
-import Header from "@/components/Header";
-// import Footer from "@/components/Footer"; // 나중에 추가
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-white">
+    <div className="bg-white flex flex-col min-h-screen">
       <Header />
-      <main>{children}</main>
-      {/* <Footer /> */}
+      <main className="flex flex-grow h-full">{children}</main>
+      <Footer />
     </div>
   );
 }

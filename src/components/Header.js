@@ -14,7 +14,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky inset-x-0 top-0 z-50 mx-auto ">
+    <header className="sticky inset-x-0 top-0 z-50  ">
       <nav
         aria-label="Global"
         className="flex items-center justify-between p-6 lg:px-8"
@@ -23,9 +23,9 @@ export default function Header() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Logo</span>
             <img
-              alt=""
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-12 w-auto"
+              alt="logo"
+              src="/images/logo.png"
+              className="h-20 w-auto"
             />
           </a>
         </div>
@@ -36,7 +36,7 @@ export default function Header() {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="size-12" />
+            <Bars3Icon aria-hidden="true" className="size-16" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -51,7 +51,7 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden cursor-pointer lg:flex lg:flex-1 lg:justify-end">
-          <img src="/images/userInfo.svg" alt="userInfo" className="size-14" />
+          <img src="/images/userInfo.svg" alt="userInfo" className="size-20" />
         </div>
       </nav>
       <Dialog
@@ -66,8 +66,8 @@ export default function Header() {
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="size-14"
+                src="images/logo.png"
+                className="size-20"
               />
             </a>
             <button
