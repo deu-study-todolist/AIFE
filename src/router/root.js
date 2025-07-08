@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainPage from "../pages/main/MainPage";
 import Support from "../pages/support/Support";
+import Product from "../pages/product/Product";
 
 export const router = createBrowserRouter([
   {
@@ -11,5 +12,9 @@ export const router = createBrowserRouter([
   {
     path: "/support",
     element: <Support />,
+  },
+  {
+    path: "/product",
+    element: <Product />,
   },
 ]);

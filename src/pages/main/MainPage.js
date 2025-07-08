@@ -24,7 +24,7 @@ export default function MainPage() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-4 py-2 text-2xl text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               제품에 대해 더 알고 싶으신가요?.{" "}
-              <a href="#" className="font-semibold text-indigo-600">
+              <a href="/features" className="font-semibold text-indigo-600">
                 <span aria-hidden="true" className="absolute inset-0" />더 보러
                 가기 <span aria-hidden="true">&rarr;</span>
               </a>
@@ -39,12 +39,15 @@ export default function MainPage() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="/product"
                 className="rounded-md bg-indigo-600 px-4 py-3 text-3xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </a>
-              <a href="#" className="text-3xl font-semibold text-gray-900">
+              <a
+                href="/features"
+                className="text-3xl font-semibold text-gray-900"
+              >
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

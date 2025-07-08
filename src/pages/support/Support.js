@@ -3,36 +3,33 @@ import Layout from "../../layout/Layout";
 export default function Support() {
   return (
     <Layout>
-              <div className="flex flex-col items-center justify-around w-full">
-                <div className="flex flex-col items-center gap-10">
-                  <span className="text-8xl">Support center</span>
-                  <span className="text-5xl">무엇을 도와드릴까요?</span>
-                  <video
-              alt="logo"
-              src="/video/support.mp4"
-              className="w-auto h-[400px]"
-              autoPlay
-              loop
-              muted
-              playsInline
-              >
-            </video>
-                </div>
-                 <div className="mt-12 text-center text-2xl md:text-3xl space-y-4 font-semibold">
-                  <span >P. 010-4005-2469</span>
-                  <span>E-mail. gnswldms2@gmail.com</span>
-                  
+      <div className="flex flex-col items-center justify-around w-full">
+        <div className="flex flex-col items-center gap-10">
+          <span className="text-8xl">Support center</span>
+          <span className="text-5xl">무엇을 도와드릴까요?</span>
+          <video
+            className="w-auto h-[400px] bg-white"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="/video/support.webm" type="video/webm" />
+            <source src="/video/support.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className="mt-12 text-center text-2xl md:text-3xl space-y-4 font-semibold">
+          <span>P. 010-4005-2469</span>
+          <span>E-mail. gnswldms2@gmail.com</span>
 
-                  <button>34</button>
-                </div>
-              </div>
+          <button>34</button>
+        </div>
+      </div>
     </Layout>
-    
   );
 }
 
-
- <div className="relative isolate px-6 pt-14 lg:px-8">
+<div className="relative isolate px-6 pt-14 lg:px-8">
   {/* 그라데이션 1*/}
   <div
     aria-hidden="true"
