@@ -3,6 +3,7 @@ import MainPage from "../pages/main/MainPage";
 import Support from "../pages/support/SupportPage";
 import Product from "../pages/product/ProductPage";
 import MemberPage from "../pages/member/MemberPage";
+import FeaturesPage from "../pages/features/FeaturesPage";
 
 export const router = createBrowserRouter([
   {
@@ -21,5 +22,9 @@ export const router = createBrowserRouter([
   {
     path: "/member",
     element: <MemberPage />,
+  },
+  {
+    path: "/features",
+    element: <FeaturesPage />,
   },
 ]);
